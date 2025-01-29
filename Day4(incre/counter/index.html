@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #000000ef;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>Increment and decrement</h1>
+        <p>Count:</p>
+        <p id="count">0</p>
+        <button id="in">Increment</button>
+        <button id="de">Decrement</button>
+    </div>
+    <script>
+        console.log("connected")
+        let count = 0;
+        let increment = document.getElementById("in").onclick = function () {
+            count++;
+            document.getElementById('count').innerHTML = count;
+        }
+
+        let decrement = document.getElementById("de").onclick = function () {
+            count--;
+            document.getElementById('count').innerHTML = count;
+        }
+
+    </script>
+</body>
+
+</html>

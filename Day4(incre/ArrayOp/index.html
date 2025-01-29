@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 2rem;
+            color: white;
+            background-color: rgba(2, 15, 15, 0.903);
+        }
+
+        img {
+            height: 250px;
+            width: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Array methods</h1>
+    <img src="image.png" alt="">
+    <br />
+
+    <b>var a = [1,2,3,4,5]</b><br />
+    <p>Push=</p>
+    <p id="push"></p>
+    pop:<p id="pop"></p>
+    shift:<p id="shift"></p>
+    unshift:<p id="unshift"></p>
+    splice:<p id="splice"></p>
+    slice:<p id="slice"></p>
+
+    <script>
+        console.log("connected");
+        var a = [1, 2, 3, 4, 5];
+        (function pushA() {
+            a.push(6),
+                document.getElementById("push").innerHTML = a;
+        })();
+        (function popA() {
+            a.pop(),
+                document.getElementById("pop").innerHTML = a;
+        })();
+        (function shiftA() {
+            a.shift(),
+                document.getElementById("shift").innerHTML = a;
+        })();
+        (function unshiftA() {
+            a.unshift(0),
+                document.getElementById("unshift").innerHTML = a;
+        })();
+        (function spliceA() {
+            a.splice(2, 1, 10)
+            document.getElementById("splice").innerHTML = a;
+        })();
+        (function sliceA() {
+            a.slice(1, 5),
+                document.getElementById('slice').innerHTML = a;
+        })();
+
+
+    </script>
+</body>
+
+</html>

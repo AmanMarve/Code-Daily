@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 2rem;
+        color: white;
+        background-color: rgba(2, 15, 15, 0.903);
+    }
+</style>
+
+<body>
+    <h1>All String Method</h1>
+    <p>Simple hover you have to hover on methods(), when you are in VS-Code.</p>
+    <p>Achhe se padhna nhi to Jha tha wahi reh jayegaa...</p>
+    <p>check console.{CTRL+SHIFT+C}</p>
+    <script>
+        console.log("Connected");
+        let name = "Aman"
+        let age = 23
+        let demoString = `Hey There I Am ${name}`
+        let string = `my age is ${age}.`
+
+        console.log(demoString.at(2));
+        console.log(demoString.charAt(2));
+        //returns interge UTF-16 code
+        console.log(demoString.charCodeAt());
+        //to join to strings
+        console.log(demoString.concat(' ', string));
+        //returns true or false, same like includes but different;
+        console.log(demoString.endsWith(name));
+        console.log(demoString.includes('Am'));
+        console.log(demoString.indexOf('I'));
+        console.log(demoString.slice(2, 5));
+
+        const words = demoString.split(' ');
+        console.log(words[2]);
+
+        console.log(demoString.startsWith('There', 2));
+        console.log(demoString.toLowerCase());
+        console.log(demoString.toUpperCase());
+        //if you have space in start or end it will remove it
+        console.log(demoString.trim());
+        console.log(demoString.trimStart());
+        console.log(demoString.trimEnd());
+
+        const demo = new String("A Demo String");
+        console.log(demo.valueOf());
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -8,55 +8,76 @@
 </head>
 <style>
     body {
+        text-align: center;
         margin: 0;
         padding: 2rem;
         color: white;
         background-color: rgba(2, 15, 15, 0.903);
     }
+
+    h4 {
+        text-align: start;
+        margin-bottom: -.5rem;
+    }
+
+    #comment {
+        color: gray;
+        font-style: italic;
+    }
+
+    #code {
+        text-align: start;
+        color: rgb(57, 219, 57);
+    }
+
+    table {
+        width: 50%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    th {
+        background-color: rgba(211, 211, 211, 0.319);
+    }
 </style>
 
 <body>
     <h1>All String Method</h1>
-    <p>Simple hover you have to hover on methods(), when you are in VS-Code.</p>
-    <p>Achhe se padhna nhi to Jha tha wahi reh jayegaa...</p>
-    <p>check console.{CTRL+SHIFT+C}</p>
-    <script>
-        console.log("Connected");
-        let name = "Aman"
-        let age = 23
-        let demoString = `Hey There I Am ${name}`
-        let string = `my age is ${age}.`
+    <p>Simply you have to hover on methods(), when you are in VS-Code.</p>
+    <p>Achhe se padhna nhi to Jaha tha wahi reh jayegaa...</p>
+    <h4>Code Snippet</h4>
+    <p id="code">
+        let name = "Aman";
+        <br>
+        let age = 23;
+        <br>
+        let demoString = `Hey There I Am ${name}`;
+        <br>
+        let string = `my age is ${age}.`;
+    </p>
 
-        console.log(demoString.at(2));
-        console.log(demoString.charAt(2));
-        //returns interge UTF-16 code
-        console.log(demoString.charCodeAt());
-        //to join to strings
-        console.log(demoString.concat(' ', string));
-        //returns true or false, same like includes but different;
-        console.log(demoString.endsWith(name));
-        console.log(demoString.includes('Am'));
-        console.log(demoString.indexOf('I'));
-        console.log(demoString.slice(2, 5));
+    <table id="methodsTable" border="1">
+        <thead>
+            <tr>
+                <th>Method</th>
+                <th>Output</th>
+                <th>Use</th>
+            </tr>
+        </thead>
+        <tbody>
 
-        const words = demoString.split(' ');
-        console.log(words[2]);
+        </tbody>
+    </table>
 
-        console.log(demoString.startsWith('There', 2));
-        console.log(demoString.toLowerCase());
-        console.log(demoString.toUpperCase());
-        //if you have space in start or end it will remove it
-        console.log(demoString.trim());
-        console.log(demoString.trimStart());
-        console.log(demoString.trimEnd());
-
-        const demo = new String("A Demo String");
-        console.log(demo.valueOf());
-
-
-
-
-
+    <script src="demo.js">
     </script>
 </body>
 

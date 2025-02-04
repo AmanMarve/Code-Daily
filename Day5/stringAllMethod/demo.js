@@ -20,7 +20,7 @@ function addRow(method, output, use) {
 addRow(".at()", demoString.at(2), "see char at 2 index");
 addRow(".charAt()", demoString.charAt(2), "same as above");
 addRow("charCodeAt()", demoString.charCodeAt(), "Returns UTF-16 code of character");
-addRow(".conact()", demoString.concat(', ', string), "Joins two Strings");
+addRow(".concat()", demoString.concat(', ', string), "Joins two Strings");
 addRow(".includes()", demoString.includes('am'), "check wheter its available or not")
 addRow(".endsWith()", demoString.endsWith(name), "returns true or false if available, same as above")
 addRow(".indexOf()", demoString.indexOf('I'), "tells you index value");

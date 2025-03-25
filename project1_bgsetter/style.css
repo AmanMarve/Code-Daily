@@ -1,0 +1,45 @@
+
+.bk{
+    display: grid;
+    grid-auto-rows: auto;
+    gap: 10px;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    /* grid-template-rows: 1fr 1fr; */
+}
+
+ .bk #red{
+    height: 150px;
+    width: 150px;
+    background-color:red;
+}
+
+.bk :nth-child(1){
+    border: 1px solid black;
+}
+.bk :nth-child(2){
+    border: 1px solid black;
+}
+.bk :nth-child(3){
+    border: 1px solid black;
+}
+.bk :nth-child(4){
+    border: 1px solid black;
+}
+
+.bk #blue{
+    height: 150px;
+    width: 150px;
+    background-color:blue;
+}
+
+.bk #green{
+    height: 150px;
+    width: 150px;
+    background-color:green;
+}
+
+.bk #grey{
+    height: 150px;
+    width: 150px;
+    background-color:grey;
+}
